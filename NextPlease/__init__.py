@@ -10,7 +10,7 @@ class NextPleasePaginator (Paginator):
     self.request = request
     self.page_param = page_param
     
-    super(NextPleasePaginator, self).__init__ (object_list, per_page, orphans=orphans, allow_empty_first_page=allow_empty_first_page)
+    super().__init__ (object_list, per_page, orphans=orphans, allow_empty_first_page=allow_empty_first_page)
     
   def current (self):
     if not hasattr(self, '_current'):
